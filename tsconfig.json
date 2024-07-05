@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",                      // Use a more modern target, such as ES6 or later.
+    "module": "esnext",                   // Use ES modules.
+    "jsx": "react",                       // Support JSX for React.
+    "strict": true,                       // Enable strict type-checking options.
+    "esModuleInterop": true,              // Enables compatibility between CommonJS and ES modules.
+    "skipLibCheck": true,                 // Skip type checking of declaration files.
+    "forceConsistentCasingInFileNames": true,  // Ensure file names are case-consistent.
+    "declaration": true,                  // Generate declaration files.
+    "outDir": "dist",                     // Specify the output directory for compiled files.
+    "moduleResolution": "node",           // Use Node's module resolution algorithm.
+    "isolatedModules": true               // Enforce that each file can be safely transpiled without relying on other files.
+  },
+  "include": ["src/**/*"],                // Specify the directories to include in the compilation.
+  "exclude": ["node_modules", "dist"]     // Exclude certain directories from the compilation.
+}

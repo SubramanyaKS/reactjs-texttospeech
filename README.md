@@ -17,7 +17,9 @@ To install the package, use npm or yarn:
 npm install reactjs-texttospeech
 
 ```
+
 or
+
 ```bash
 
 yarn add reactjs-texttospeech
@@ -28,40 +30,60 @@ yarn add reactjs-texttospeech
 Here's a quick example of how to use the useSpeeched hook in your React component:
 
 ```js
-import React, { useState } from 'react';
-import { useSpeeched } from './useSpeeched';
+import React, { useState } from "react";
+import { useSpeeched } from "./useSpeeched";
 
 const TextToSpeechComponent = () => {
-    const [text, setText] = useState("Hello, this is a test");
-    const [rate, setRate] = useState(1);
-    const [pitch, setPitch] = useState(1);
-    const { handlePlay, handlePause, handleStop, isPaused } = useSpeeched(text, rate, pitch);
+  const [text, setText] = useState("Hello, this is a test");
+  const [rate, setRate] = useState(1);
+  const [pitch, setPitch] = useState(1);
+  const { handlePlay, handlePause, handleStop, isPaused } = useSpeeched(
+    text,
+    rate,
+    pitch
+  );
 
-    return (
-        <div>
-            <textarea value={text} onChange={(e) => setText(e.target.value)} />
-            <div>
-                <label>Rate:
-                    <input type="number" value={rate} onChange={(e) => setRate(Number(e.target.value))} min="0.1" max="2" step="0.1" />
-                </label>
-            </div>
-            <div>
-                <label>Pitch:
-                    <input type="number" value={pitch} onChange={(e) => setPitch(Number(e.target.value))} min="0" max="2" step="0.1" />
-                </label>
-            </div>
-            <button onClick={handlePlay}>Play</button>
-            <button onClick={handlePause}>{isPaused ? 'Resume' : 'Pause'}</button>
-            <button onClick={handleStop}>Stop</button>
-        </div>
-    );
+  return (
+    <div>
+      <textarea value={text} onChange={(e) => setText(e.target.value)} />
+      <div>
+        <label>
+          Rate:
+          <input
+            type="number"
+            value={rate}
+            onChange={(e) => setRate(Number(e.target.value))}
+            min="0.1"
+            max="2"
+            step="0.1"
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Pitch:
+          <input
+            type="number"
+            value={pitch}
+            onChange={(e) => setPitch(Number(e.target.value))}
+            min="0"
+            max="2"
+            step="0.1"
+          />
+        </label>
+      </div>
+      <button onClick={handlePlay}>Play</button>
+      <button onClick={handlePause}>{isPaused ? "Resume" : "Pause"}</button>
+      <button onClick={handleStop}>Stop</button>
+    </div>
+  );
 };
 
 export default TextToSpeechComponent;
 ```
 
-
 ## Development
+
 If you want to contribute or modify the package, clone the repository and install the dependencies:
 
 ```bash
@@ -77,9 +99,10 @@ npm run build
 ```
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Acknowledgements
-* Inspired by the simplicity of the Web Speech API.
-* Thanks to all contributors and the open-source community for making this possible.
 
+- Inspired by the simplicity of the Web Speech API.
+- Thanks to all contributors and the open-source community for making this possible.
