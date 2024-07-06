@@ -1,0 +1,39 @@
+{
+  "name": "reactjs-texttospeech",
+  "version": "0.0.2",
+  "description": "A React Component for text to speech conversion",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "text-to-speech",
+    "text2speech",
+    "speech",
+    "react",
+    "component",
+    "text"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SubramanyaKS/reactjs-texttospeech"
+  },
+  "bugs": {
+    "url": "https://github.com/SubramanyaKS/reactjs-texttospeech/issues"
+  },
+  "author": "SubramanyaKS",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.2"
+  }
+}
