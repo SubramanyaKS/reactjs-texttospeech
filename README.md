@@ -82,7 +82,7 @@ const TextToSpeechComponent = () => {
 export default TextToSpeechComponent;
 ```
 
-## Development
+## Contribution.
 
 If you want to contribute or modify the package, clone the repository and install the dependencies:
 
@@ -92,12 +92,6 @@ cd reactjs-texttospeech
 npm install
 ```
 
-To build the package, run:
-
-```bash
-npm run build
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
@@ -105,4 +99,5 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Acknowledgements
 
 - Inspired by the simplicity of the Web Speech API.
-- Thanks to all contributors and the open-source community for making this possible.
+
+- Thanks to React community.
